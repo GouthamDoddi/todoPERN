@@ -1,4 +1,6 @@
-const Pool = require('pg').Pool;
+'use strict';
+
+const { Pool } = require('pg');
 
 const pool = new Pool({
     user: 'postgres',
@@ -6,6 +8,6 @@ const pool = new Pool({
     host: 'localhost',
     port: 5432,
     database: 'perntodo',
-})
+});
 
 module.exports = pool;
